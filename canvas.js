@@ -14,7 +14,7 @@ var c = canvas.getContext('2d');
 //strat drawing
 
 //c.fillStyle = "#2222DE";
-c.fillStyle = "#FF0000";
+//c.fillStyle = "#FF0000";
 c.fillRect(250, 200, 500, 400);
 c.fillRect( 100, 100, 50, 50);
 c.fillRect( 0, 0, 10, 100);
