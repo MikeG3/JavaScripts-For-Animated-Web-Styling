@@ -12,11 +12,12 @@ var c.canvas.getContext('2d');
 
 
 //strat drawing
+/*
 c.fillStyle = "#2222DE";
 c.fillRect( 100, 100, 50, 50);
 c.fillRect( 0, 0, 50, 50);
 c.fillRect( 10, 10, 15, 25);
-
+*/
 
 
 
