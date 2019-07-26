@@ -8,7 +8,7 @@ var windowWidth = window.innerWidth;
 var windowHeight = window.innerHeight;
 
 //Gives canvas API 2d drawing functions
-var c.canvas.getContext('2d');
+//var c.canvas.getContext('2d');
 
 
 //strat drawing
