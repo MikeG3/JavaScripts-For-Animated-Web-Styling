@@ -14,6 +14,12 @@ var c = canvas.getContext('2d');
 var i = 0;
 var j = 0;
 var secondI = new Boolean(false);
+var aSquareR = 0;
+var aSquareG = 0;
+var aSquareB = 0;
+var bSquareR = 0;
+var bSquareG = 0;
+var bSquareB = 0;
 
 //strat drawing
 
@@ -29,6 +35,8 @@ for (i = 0 ; i < windowHeight ; i+=40 ){
     c.fillRect(i, j, 40, 40); 
     secondI = !secondI;
   }//close inner for loop
+  
+  //update colors
   
 }//close outter for loop
   
