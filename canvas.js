@@ -40,16 +40,8 @@ for (i = 0 ; i < windowHeight ; i+=80 ){
   
 }//close outter for loop
   
-/*
-c.fillRect(250, 200, 500, 400);
-c.fillRect( 100, 100, 50, 50);
-c.fillRect( 0, 0, 10, 100);
-c.fillRect( 10, 10, 15, 25);
-
-c.fillRect( windowWidth, 0, 10, 100);
-c.fillRect( 10, 10, 15, 25);
-*/
-
+document.write("Window width = " + windowWidth);
+document.write("Window length = " + windowLength);
 
 
 
