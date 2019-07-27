@@ -26,13 +26,13 @@ var bSquareB = 0;
 
 c.fillStyle = "#FF00EE";
 
-for (i = 0 ; i < windowHeight ; i+=80 ){
+for (i = 0 ; i < windowHeight ; i+=40 ){
 
-  for (j = 0 ; j < windowWidth ; j+=40 ) {
+  for (j = 0 ; j < windowWidth ; j+=80 ) {
     if (secondI){
       j += 40;
     }//close if
-    c.fillRect(i, j, 40, 40); 
+    c.fillRect(j, i, 40, 40); 
     secondI = !secondI;
     
     document.write("i = " +i + "   ");
@@ -45,10 +45,8 @@ for (i = 0 ; i < windowHeight ; i+=80 ){
 }//close outter for loop
   
 document.write("Window width = " + windowWidth);
-document.write("Window width = " + windowWidth);
-document.write("Window length = " + windowLength);
-document.write("Window width = " + windowWidth);
-document.write("Window length = " + windowLength);
+document.write("Window width = " + windowHeight);
+
 
 
 //output to console
