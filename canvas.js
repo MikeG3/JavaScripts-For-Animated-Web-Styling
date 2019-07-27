@@ -10,11 +10,20 @@ var windowHeight = window.innerHeight;
 //Gives canvas API 2d drawing functions
 var c = canvas.getContext('2d');
 
+//variables 
+var i = 0;
+var j = 0;
 
 //strat drawing
 
-//c.fillStyle = "#2222DE";
+
 c.fillStyle = "#FF00EE";
+
+for (i = 0 ; i < windowWidth ; i+=10 ) {
+  fillRect(i, j, 10, 10);
+  
+}//close
+  
 c.fillRect(250, 200, 500, 400);
 c.fillRect( 100, 100, 50, 50);
 c.fillRect( 0, 0, 10, 100);
