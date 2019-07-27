@@ -35,8 +35,8 @@ for (i = 0 ; i < windowHeight ; i+=80 ){
     c.fillRect(i, j, 40, 40); 
     secondI = !secondI;
     
-    document.write("i = " +i + "\t");
-    document.write("j= " + j + "\n");
+    document.write("i = " +i + "   ");
+    document.write("j= " + j + "<br>");
     
   }//close inner for loop
   
@@ -44,6 +44,7 @@ for (i = 0 ; i < windowHeight ; i+=80 ){
   
 }//close outter for loop
   
+document.write("Window width = " + windowWidth);
 document.write("Window width = " + windowWidth);
 document.write("Window length = " + windowLength);
 document.write("Window width = " + windowWidth);
