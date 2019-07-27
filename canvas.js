@@ -19,10 +19,14 @@ var j = 0;
 
 c.fillStyle = "#FF00EE";
 
+for (j = 0 ; j < windowHeight ; j+=10 ){
+
 for (i = 0 ; i < windowWidth ; i+=10 ) {
   fillRect(i, j, 10, 10);
   
-}//close
+}//close inner for loop
+  
+}//close outter for loop
   
 c.fillRect(250, 200, 500, 400);
 c.fillRect( 100, 100, 50, 50);
