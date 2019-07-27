@@ -44,8 +44,8 @@ for (i = 0 ; i < windowHeight ; i+=40 ){
   
 }//close outter for loop
   
-document.write("Window width = " + windowWidth);
-document.write("Window width = " + windowHeight);
+document.write("Window width = " + windowWidth + "<br>");
+document.write("Window height = " + windowHeight + "<br>");
 
 
 
