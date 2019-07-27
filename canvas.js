@@ -35,8 +35,8 @@ for (i = 0 ; i < windowHeight ; i+=80 ){
     c.fillRect(i, j, 40, 40); 
     secondI = !secondI;
     
-    document.write("i = " +i);
-    document.write("j= " + j);
+    document.write("i = " +i + "\t");
+    document.write("j= " + j + "\n");
     
   }//close inner for loop
   
