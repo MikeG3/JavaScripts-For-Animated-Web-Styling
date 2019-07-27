@@ -26,7 +26,7 @@ var bSquareB = 0;
 
 c.fillStyle = "#FF00EE";
 
-for (i = 0 ; i < windowHeight ; i+=40 ){
+for (i = 0 ; i < windowHeight ; i+=80 ){
 
   for (j = 0 ; j < windowWidth ; j+=40 ) {
     if (secondI){
