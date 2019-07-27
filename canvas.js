@@ -13,6 +13,7 @@ var c = canvas.getContext('2d');
 //variables 
 var i = 0;
 var j = 0;
+var secondI = new Boolean(false);
 
 //strat drawing
 
@@ -22,7 +23,10 @@ c.fillStyle = "#FF00EE";
 for (i = 0 ; i < windowHeight ; i+=80 ){
 
   for (j = 0 ; j < windowWidth ; j+=80 ) {
+    if (secondI)
+      j += 80;
     c.fillRect(i, j, 40, 40); 
+    secondI = !secondI;
   }//close inner for loop
   
 }//close outter for loop
