@@ -20,11 +20,11 @@ var secondI = new Boolean(false);
 
 c.fillStyle = "#FF00EE";
 
-for (i = 0 ; i < windowHeight ; i+=80 ){
+for (i = 0 ; i < windowHeight ; i+=40 ){
 
-  for (j = 0 ; j < windowWidth ; j+=80 ) {
+  for (j = 0 ; j < windowWidth ; j+=40 ) {
     if (secondI){
-      j += 80;
+      j += 40;
     }//close if
     c.fillRect(i, j, 40, 40); 
     secondI = !secondI;
