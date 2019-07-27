@@ -23,8 +23,9 @@ c.fillStyle = "#FF00EE";
 for (i = 0 ; i < windowHeight ; i+=80 ){
 
   for (j = 0 ; j < windowWidth ; j+=80 ) {
-    if (secondI)
+    if (secondI){
       j += 80;
+    }//close if
     c.fillRect(i, j, 40, 40); 
     secondI = !secondI;
   }//close inner for loop
