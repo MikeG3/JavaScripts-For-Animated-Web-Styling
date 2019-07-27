@@ -22,7 +22,7 @@ c.fillStyle = "#FF00EE";
 for (j = 0 ; j < windowHeight ; j+=10 ){
 
 for (i = 0 ; i < windowWidth ; i+=10 ) {
-  fillRect(i, j, 10, 10);
+  c.fillRect(i, j, 10, 10);
   
 }//close inner for loop
   
