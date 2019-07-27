@@ -46,7 +46,8 @@ for (i = 0 ; i < windowHeight ; i+=80 ){
   
 document.write("Window width = " + windowWidth);
 document.write("Window length = " + windowLength);
-
+document.write("Window width = " + windowWidth);
+document.write("Window length = " + windowLength);
 
 
 //output to console
