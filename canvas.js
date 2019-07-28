@@ -50,6 +50,7 @@ var squareSize = 40;
 var aSquareR = 0;
 var aSquareG = 0;
 var aSquareB = 0;
+var aSquareA = 0.5;
 var bSquareR = 0;
 var bSquareG = 0;
 var bSquareB = 0;
@@ -64,7 +65,16 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
    // document.write("i = " +i + "   ");
    // document.write("j= " + j + "<br>");
   }//close inner for loop
+  
   //update colors
+  aSquareR += 5
+  aSquareR %= 255;
+  aSquareG += 25
+  aSquareG %= 255;
+  aSquareB += 15
+  aSquareB %= 255;
+  c.fillStyle = "rgba("aSquareR, aSquareG, aSquareB, aSquareA );
+  
 }//close outter for loop
 // document.write("Window width = " + windowWidth + "<br>");
 // document.write("Window height = " + windowHeight + "<br>");
