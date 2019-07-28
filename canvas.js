@@ -67,11 +67,11 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
   }//close inner for loop
   
   //update colors
-  aSquareR += 5
+  aSquareR += 5;
   aSquareR %= 255;
-  aSquareG += 25
+  aSquareG += 25;
   aSquareG %= 255;
-  aSquareB += 15
+  aSquareB += 15;
   aSquareB %= 255;
   c.fillStyle = "rgba(aSquareR, aSquareG, aSquareB, aSquareA )";
   
