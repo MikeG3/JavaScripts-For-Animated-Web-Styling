@@ -70,6 +70,10 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
     aSquareB %= 255;
     c.fillStyle = 'rgba(aSquareR, aSquareG, aSquareB, aSquareA )';
     c.fillRect(j, i, 40, 40);  
+    document.write("aSquareR = " +aSquareR + " <br>  ");
+    document.write("aSquareG = " +aSquareG + " <br>  ");
+    document.write("aSquareB = " +aSquareB + " <br>  ");
+    
    // document.write("i = " +i + "   ");
    // document.write("j= " + j + "<br>");
   }//close inner for loop
