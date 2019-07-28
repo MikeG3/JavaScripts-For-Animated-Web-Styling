@@ -23,6 +23,7 @@ var bSquareR = 0;
 var bSquareG = 0;
 var bSquareB = 0;
 var bSquareA = 0.5;
+var grayColor = 0;
 var incrementing = true;
 
 //strat drawing
