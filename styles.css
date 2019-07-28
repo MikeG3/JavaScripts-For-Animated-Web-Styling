@@ -3,7 +3,7 @@ body{
  padding: 0;
 }
 canvas {
-  background-color: blue;
-  color: black;
+  background-color: black;
+  color: #003366;
   /*border: 10px solid blue;  */
 }
