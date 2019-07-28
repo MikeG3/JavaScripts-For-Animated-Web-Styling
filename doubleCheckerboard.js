@@ -96,7 +96,16 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
   
 //TEXT
 c.font = "30px Comic Sans MS";
-c.fillStyle = "white";
+if ( frameCounter % 1500 < 500 ){
+  c.fillStyle = "white";
+}//close if <500
+else if ( frameCounter % 1500 < 1000 ){
+  c.fillStyle = "grey";
+}//close if <500
+else {
+  c.fillStyle = "black";
+}
+
 c.textAlign = "center";
 c.fillText("Michael Garner Designs", canvas.width/2, canvas.height/2);   
   
