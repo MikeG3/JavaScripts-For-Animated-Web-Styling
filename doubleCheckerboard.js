@@ -96,10 +96,10 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
   
 //TEXT
 c.font = "30px Comic Sans MS";
-if ( frameCounter % 1500 < 500 ){
+if ( frameCounter % 300 < 100 ){
   c.fillStyle = "white";
 }//close if <500
-else if ( frameCounter % 1500 < 1000 ){
+else if ( frameCounter % 300 < 200 ){
   c.fillStyle = "grey";
 }//close if <500
 else {
