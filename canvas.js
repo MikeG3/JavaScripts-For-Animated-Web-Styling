@@ -48,7 +48,7 @@ function animate() {
   //variables 
 // var i = 0;
 // var j = 0;
-// var squareSize = 40;
+ var squareSize = 40;
 // var aSquareR = 0;
 // var aSquareG = 0;
 // var aSquareB = 0;
