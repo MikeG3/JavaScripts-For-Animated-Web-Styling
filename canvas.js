@@ -59,10 +59,10 @@ function animate() {
 // var bSquareB = 0;
   
   //UPDATE SQUARE SIZE
-  if (squareSize < 10) {
+  if (squareSize < 5) {
     incrementing = true;
   }
-    if (squareSize > 100) {
+    if (squareSize > 600) {
     incrementing = false;
   }
   if (incrementing){
