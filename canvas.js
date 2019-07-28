@@ -22,6 +22,7 @@ var aSquareA = 0.5;
 var bSquareR = 0;
 var bSquareG = 0;
 var bSquareB = 0;
+var incrementing = true;
 
 //strat drawing
 
@@ -56,6 +57,20 @@ function animate() {
 // var bSquareR = 0;
 // var bSquareG = 0;
 // var bSquareB = 0;
+  
+  //UPDATE SQUARE SIZE
+  if (squareSize < 10) {
+    incrementing = true;
+  }
+    if (squareSize < 100) {
+    incrementing = false;
+  }
+  if (incrementing){
+    squareSize++;
+  }
+    else {
+      squareSize--;
+    }
   
   //CHECKERED BOARD
 for (i = 0 ; i < windowHeight ; i+=squareSize ){
