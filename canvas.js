@@ -28,7 +28,7 @@ c.fillStyle = "#FF00EE";
 
 for (i = 0 ; i < windowHeight ; i+=squareSize ){
 
-  for (j = 0 ; j < windowWidth ; j+=80 ) {  //j = (2*squareSize)
+  for (j = 0 ; j < windowWidth ; j+=(2*squareSize) ) {  //j = (2*squareSize)
     if ( (j==0) && (i/40%2 != 0) ){     //if first in the row, and is an odd row number, offset by 1 square
       j += squareSize;
     }//close if
