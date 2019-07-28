@@ -41,7 +41,14 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
 document.write("Window width = " + windowWidth + "<br>");
 document.write("Window height = " + windowHeight + "<br>");
 
-
-
+function animate() {
+  
+  
+  
+  
+requestAnimationFrame(animate);
 //output to console
 console.log(canvas);
+};
+
+animate();
