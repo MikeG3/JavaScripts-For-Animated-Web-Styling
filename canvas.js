@@ -66,8 +66,8 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
   }//close inner for loop
   //update colors
 }//close outter for loop
-document.write("Window width = " + windowWidth + "<br>");
-document.write("Window height = " + windowHeight + "<br>");
+// document.write("Window width = " + windowWidth + "<br>");
+// document.write("Window height = " + windowHeight + "<br>");
   
   
 requestAnimationFrame(animate);
