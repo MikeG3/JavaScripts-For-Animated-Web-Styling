@@ -31,6 +31,7 @@ for (i = 0 ; i < windowHeight ; i+=40 ){
   for (j = 0 ; j < windowWidth ; j+=80 ) {
     if (secondI){
       j += 40;
+      secondI = false;
     }//close if
     c.fillRect(j, i, 40, 40); 
     
