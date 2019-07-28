@@ -37,11 +37,8 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
     
     document.write("i = " +i + "   ");
     document.write("j= " + j + "<br>");
-    //document.write("secondI= " + secondI + "<br>");
     
   }//close inner for loop
-  
-  secondI = !secondI;
   
   //update colors
   
