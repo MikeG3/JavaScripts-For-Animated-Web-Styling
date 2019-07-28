@@ -77,7 +77,7 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
     aSquareG %= 255;
     aSquareB += 15;
     aSquareB %= 255;
-    c.fillStyle = 'rgba(' + aSquareR + ',' + aSquareG + ',' + aSquareB + ','+ aSquareA + ')';
+    c.fillStyle = 'rgba(0,' + aSquareG + ',' + aSquareB + ','+ aSquareA + ')';
     c.fillRect(j, i, squareSize, squareSize);  
   }//close inner for loop
   
