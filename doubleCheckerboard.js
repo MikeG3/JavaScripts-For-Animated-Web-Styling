@@ -95,10 +95,10 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
 // document.write("Window height = " + windowHeight + "<br>");
   
 //TEXT
-ctx.font = "30px Comic Sans MS";
-ctx.fillStyle = "white";
-ctx.textAlign = "center";
-ctx.fillText("Michael Garner Designs", canvas.width/2, canvas.height/2);   
+c.font = "30px Comic Sans MS";
+c.fillStyle = "white";
+c.textAlign = "center";
+c.fillText("Michael Garner Designs", canvas.width/2, canvas.height/2);   
   
   
 //ANIMATE
