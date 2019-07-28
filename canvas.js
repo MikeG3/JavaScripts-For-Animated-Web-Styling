@@ -33,12 +33,15 @@ for (i = 0 ; i < windowHeight ; i+=40 ){
       j += 40;
     }//close if
     c.fillRect(j, i, 40, 40); 
-    secondI = !secondI;
+    
     
     document.write("i = " +i + "   ");
     document.write("j= " + j + "<br>");
+    //document.write("secondI= " + secondI + "<br>");
     
   }//close inner for loop
+  
+  secondI = !secondI;
   
   //update colors
   
