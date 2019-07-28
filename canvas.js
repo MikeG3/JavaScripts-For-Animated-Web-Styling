@@ -46,16 +46,16 @@ c.fillStyle = "#FF00EE";
 function animate() {
   
   //variables 
-var i = 0;
-var j = 0;
-var squareSize = 40;
-var aSquareR = 0;
-var aSquareG = 0;
-var aSquareB = 0;
-var aSquareA = 0.5;
-var bSquareR = 0;
-var bSquareG = 0;
-var bSquareB = 0;
+// var i = 0;
+// var j = 0;
+// var squareSize = 40;
+// var aSquareR = 0;
+// var aSquareG = 0;
+// var aSquareB = 0;
+// var aSquareA = 0.5;
+// var bSquareR = 0;
+// var bSquareG = 0;
+// var bSquareB = 0;
   
   //CHECKERED BOARD
 for (i = 0 ; i < windowHeight ; i+=squareSize ){
