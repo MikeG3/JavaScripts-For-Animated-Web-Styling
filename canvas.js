@@ -71,7 +71,7 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
     aSquareB += 15;
     aSquareB %= 255;
     c.fillStyle = 'rgba(' + aSquareR + ',' + aSquareG + ',' + aSquareB + ','+ aSquareA + ')';
-    c.fillRect(j, i, 40, 40);  
+    c.fillRect(j, i, squareSize, squareSize);  
 //     document.write("aSquareR = " +aSquareR + " <br>  ");
 //     document.write("aSquareG = " +aSquareG + " <br>  ");
 //     document.write("aSquareB = " +aSquareB + " <br>  ");
