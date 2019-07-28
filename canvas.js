@@ -85,7 +85,7 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
   aSquareG %= 255;
   aSquareB += 15;
   aSquareB %= 255;
-  c.fillStyle = 'rgba(aSquareR, aSquareG, aSquareB, aSquareA )';
+  c.fillStyle = 'rgba(' + aSquareR + ',' + aSquareG + ',' + aSquareB + ','+ aAquareA + ')';
   
 }//close outter for loop
 // document.write("Window width = " + windowWidth + "<br>");
