@@ -61,8 +61,8 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
       j += squareSize;
     }//close if
     c.fillRect(j, i, 40, 40);  
-    document.write("i = " +i + "   ");
-    document.write("j= " + j + "<br>");
+   // document.write("i = " +i + "   ");
+   // document.write("j= " + j + "<br>");
   }//close inner for loop
   //update colors
 }//close outter for loop
