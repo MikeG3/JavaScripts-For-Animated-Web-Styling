@@ -81,7 +81,7 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
     c.fillRect(j, i, squareSize, squareSize);  
   }//close inner for loop
   
-  //update colors
+  //UPDATE COLORS
   aSquareR += 5;
   aSquareR %= 255;
   aSquareG += 25;
@@ -94,6 +94,14 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
 // document.write("Window width = " + windowWidth + "<br>");
 // document.write("Window height = " + windowHeight + "<br>");
   
+//TEXT
+ctx.font = "30px Comic Sans MS";
+ctx.fillStyle = "white";
+ctx.textAlign = "center";
+ctx.fillText("Michael Garner Designs", canvas.width/2, canvas.height/2);   
+  
+  
+//ANIMATE
 frameCounter++;
 requestAnimationFrame(animate);
 //output to console
