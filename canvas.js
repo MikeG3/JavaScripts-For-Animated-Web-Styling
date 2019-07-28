@@ -61,6 +61,14 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
     if ( (j==0) && (i/40%2 != 0) ){     //if first in the row, and is an odd row number, offset by 1 square
       j += squareSize;
     }//close if
+      //update colors
+  aSquareR += 5;
+  aSquareR %= 255;
+  aSquareG += 25;
+  aSquareG %= 255;
+  aSquareB += 15;
+  aSquareB %= 255;
+  c.fillStyle = 'rgba(aSquareR, aSquareG, aSquareB, aSquareA )';
     c.fillRect(j, i, 40, 40);  
    // document.write("i = " +i + "   ");
    // document.write("j= " + j + "<br>");
