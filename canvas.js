@@ -62,7 +62,7 @@ function animate() {
   if (squareSize < 5) {
     incrementing = true;
   }
-    if (squareSize > 600) {
+    if (squareSize > (windowHeight/2) ||squareSize > (windowWidth/2)) {
     incrementing = false;
   }
   if (incrementing){
