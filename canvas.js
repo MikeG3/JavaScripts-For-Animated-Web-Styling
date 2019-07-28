@@ -10,7 +10,8 @@ var windowHeight = window.innerHeight;
 //Gives canvas API 2d drawing functions
 var c = canvas.getContext('2d');
 
-//variables 
+//variables
+var frameCounter = 0;
 var i = 0;
 var j = 0;
 var squareSize = 40;
@@ -91,7 +92,7 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
 // document.write("Window width = " + windowWidth + "<br>");
 // document.write("Window height = " + windowHeight + "<br>");
   
-  
+frameCounter++;
 requestAnimationFrame(animate);
 //output to console
 console.log(canvas);
