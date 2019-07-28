@@ -68,8 +68,7 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
     aSquareG %= 255;
     aSquareB += 15;
     aSquareB %= 255;
-   c.fillStyle = 'rgba(aSquareR, 165, 0, 1)';
-    // c.fillStyle = 'rgba(aSquareR, aSquareG, aSquareB, 0.5 )';
+    c.fillStyle = 'rgba(' + aSquareR + ',' + aSquareG + ',' + aSquareB + ','+ aAquareA + ')';
     c.fillRect(j, i, 40, 40);  
 //     document.write("aSquareR = " +aSquareR + " <br>  ");
 //     document.write("aSquareG = " +aSquareG + " <br>  ");
