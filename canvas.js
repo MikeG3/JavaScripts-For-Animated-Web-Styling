@@ -47,16 +47,7 @@ c.fillStyle = "#FF00EE";
 function animate() {
   
   //variables 
-// var i = 0;
-// var j = 0;
-//  var squareSize = 40;
-// var aSquareR = 0;
-// var aSquareG = 0;
-// var aSquareB = 0;
-// var aSquareA = 0.5;
-// var bSquareR = 0;
-// var bSquareG = 0;
-// var bSquareB = 0;
+
   
   //UPDATE SQUARE SIZE
   if (squareSize < 5) {
@@ -87,12 +78,6 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
     aSquareB %= 255;
     c.fillStyle = 'rgba(' + aSquareR + ',' + aSquareG + ',' + aSquareB + ','+ aSquareA + ')';
     c.fillRect(j, i, squareSize, squareSize);  
-//     document.write("aSquareR = " +aSquareR + " <br>  ");
-//     document.write("aSquareG = " +aSquareG + " <br>  ");
-//     document.write("aSquareB = " +aSquareB + " <br>  ");
-    
-   // document.write("i = " +i + "   ");
-   // document.write("j= " + j + "<br>");
   }//close inner for loop
   
   //update colors
