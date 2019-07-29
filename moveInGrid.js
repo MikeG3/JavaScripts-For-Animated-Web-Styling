@@ -40,8 +40,8 @@ function animate() {
   //LOCAL VARIABLES 
 
  //CHECKERED BOARD
-for (i = 0 ; i < gridSizeY*squareSize ; i+=squareSize ){
-  for (j = 0 ; j < gridSizeX*squareSize  ; j+=squareSize ) { 
+for (i = 0 ; i < gridSizeY ; i++ ){
+  for (j = 0 ; j < gridSizeX  ; j++) { 
 
     //UPDATE COLORS
     aSquareR += 5;
@@ -56,14 +56,16 @@ for (i = 0 ; i < gridSizeY*squareSize ; i+=squareSize ){
     bSquareG %= 255;
     bSquareB += 6;
     bSquareB %= 255;
-     c.fillStyle = 'blue';
+    
+    //UPDATE FILLSTYLE AFTER COLOR IS SELECTED
+    c.fillStyle = 'blue';
     if ( i%2 == 0 && j%2 ==0 ) {
       c.fillStyle = 'pink';
     }//close if
     else {
         c.fillStyle = 'blue';
     }
-    c.fillRect(j, i, squareSize, squareSize);  
+    c.fillRect(j*squareSize , i*squareSize , squareSize, squareSize);  
   }//close inner for loop
   
 }//close outter for loop
