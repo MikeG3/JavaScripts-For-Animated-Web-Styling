@@ -39,13 +39,11 @@ function animate() {
   
   //LOCAL VARIABLES 
 
-  
-  //CHECKERED BOARD
  //CHECKERED BOARD
 for (i = 0 ; i < 10*squareSize ; i+=squareSize ){
   for (j = 0 ; j < 10*squareSize  ; j+=(squareSize) ) {  //j = (2*squareSize)
 
-    //update colors
+    //UPDATE COLORS
     aSquareR += 5;
     aSquareR %= 255;
     aSquareG += 25;
