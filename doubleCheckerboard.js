@@ -69,7 +69,7 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
     if ( i%2 == 0 && j%2 ==0 ) {
       c.fillStyle = 'rgba(0,100,' + aSquareB + ','+ aSquareA + ')';
     }//close if
-    else {
+    else  if ( i%2 == 1 && j%2 == 1 ){
         c.fillStyle = 'rgba(0,100,' + bSquareB + ','+ bSquareA + ')';
     }
     c.fillRect(j, i, squareSize, squareSize);  
