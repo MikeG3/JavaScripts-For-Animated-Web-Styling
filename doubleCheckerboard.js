@@ -82,7 +82,7 @@ c.font = "50px Comic Sans MS";
 if (frameCounter % 255 == 254 && grayColorInc) {
   grayColorInc = false;
 }//close if
-else if (frameCounter % 255 == 1 && !grayColorInc) {
+else if (frameCounter % 255 == 254 && !grayColorInc) {
   grayColorInc = true;
 }//close if  
 if (grayColorInc){
