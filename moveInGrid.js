@@ -64,6 +64,11 @@ for (i = 0 ; i < gridSizeY ; i++ ){
     else {
         c.fillStyle = 'blue';
     }
+    
+    //COLOR SELECTED SQUARE
+    if ( i == xPos && j == yPos )
+      c.fillStyle = '#003366';
+    
     c.fillRect(j*squareSize , i*squareSize , squareSize, squareSize);  
   }//close inner for loop
   
