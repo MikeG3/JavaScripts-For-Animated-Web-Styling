@@ -59,6 +59,12 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
     aSquareG %= 255;
     aSquareB += 15;
     aSquareB %= 255;
+    bSquareR += 3;
+    bSquareR %= 255;
+    bSquareG += 2;
+    bSquareG %= 255;
+    bSquareB += 6;
+    bSquareB %= 255;
     if ( i%2 == 0 && j%2 ==0 ) {
       c.fillStyle = 'rgba(0,100,' + aSquareB + ','+ aSquareA + ')';
     }//close if
