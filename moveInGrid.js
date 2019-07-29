@@ -57,10 +57,9 @@ for (i = 0 ; i < 10*squareSize ; i+=squareSize ){
     bSquareB += 6;
     bSquareB %= 255;
     if ( i%2 == 0 && j%2 ==0 ) {
-      c.fillStyle = 'rgba(0,100,' + aSquareB + ','+ aSquareA + ')';
-    }//close if
+      c.fillStyle = 'rgba(0,100,250, 0.5)';
     else  if ( i%2 == 1 && j%2 == 1 ){
-        c.fillStyle = 'rgba(0,100,' + bSquareB + ','+ bSquareA + ')';
+        c.fillStyle = 'rgba(200,100,50, 0.5)';
     }
     c.fillRect(j, i, squareSize, squareSize);  
   }//close inner for loop
