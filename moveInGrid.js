@@ -50,7 +50,7 @@ for (i = 0 ; i < 10*squareSize ; i+=squareSize ){
     //CREATE CHECKER BOARD
     if ( i%2 == 0 && j%2 == 0){
 //       c.fillStyle = 'rgba(50, 50, 50, 0.5)';
-      c.fillStyle = 'grey';
+      c.fillStyle = 'pink';
     }//close if
     else {
 //       c.fillStyle = 'rgba(250, 250, 250, 0.5)';
