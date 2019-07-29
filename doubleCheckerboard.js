@@ -26,29 +26,10 @@ var bSquareA = 0.5;
 var grayColor = 0;
 var incrementing = true;
 
-//strat drawing
-
-
-c.fillStyle = "#FF00EE";
-
-//CHECKERED BOARD
-// for (i = 0 ; i < windowHeight ; i+=squareSize ){
-//   for (j = 0 ; j < windowWidth ; j+=(2*squareSize) ) {  //j = (2*squareSize)
-//     if ( (j==0) && (i/40%2 != 0) ){     //if first in the row, and is an odd row number, offset by 1 square
-//       j += squareSize;
-//     }//close if
-//     c.fillRect(j, i, 40, 40);  
-//     document.write("i = " +i + "   ");
-//     document.write("j= " + j + "<br>");
-//   }//close inner for loop
-//   //update colors
-// }//close outter for loop
-// document.write("Window width = " + windowWidth + "<br>");
-// document.write("Window height = " + windowHeight + "<br>");
-
+//ANIMATION LOOP
 function animate() {
   
-  //variables 
+  //VARIABLES
 
   
   //UPDATE SQUARE SIZE
@@ -63,11 +44,11 @@ function animate() {
   }
     else {
       squareSize--;
-    }
+   }
   
   //CHECKERED BOARD
 for (i = 0 ; i < windowHeight ; i+=squareSize ){
-  for (j = 0 ; j < windowWidth ; j+=(2*squareSize) ) {  //j = (2*squareSize)
+  for (j = 0 ; j < windowWidth ; j+=(squareSize) ) {  //j = (2*squareSize)
     if ( (j==0) && (i/squareSize%2 != 0) ){     //if first in the row, and is an odd row number, offset by 1 square
       j += squareSize;
     }//close if
@@ -78,7 +59,12 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
     aSquareG %= 255;
     aSquareB += 15;
     aSquareB %= 255;
-    c.fillStyle = 'rgba(0,100,' + aSquareB + ','+ aSquareA + ')';
+    if ( i%2 == 0 && j%2 ==0 ) {
+      c.fillStyle = 'rgba(0,100,' + aSquareB + ','+ aSquareA + ')';
+    }//close if
+    else {
+        c.fillStyle = 'rgba(0,100,' + bSquareB + ','+ bSquareA + ')';
+    }
     c.fillRect(j, i, squareSize, squareSize);  
   }//close inner for loop
   
