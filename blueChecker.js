@@ -50,7 +50,7 @@ function animate() {
   //CHECKERED BOARD
 for (i = 0 ; i < windowHeight ; i+=squareSize ){
   for (j = 0 ; j < windowWidth ; j+=(squareSize) ) {  //j = (2*squareSize)
-    }//close if
+
     //update colors
     aSquareR += 5;
     aSquareR %= 255;
