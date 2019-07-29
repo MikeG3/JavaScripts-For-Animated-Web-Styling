@@ -58,6 +58,7 @@ for (i = 0 ; i < 10*squareSize ; i+=squareSize ){
     bSquareB %= 255;
     if ( i%2 == 0 && j%2 ==0 ) {
       c.fillStyle = 'pink';
+    }//close if
     else  if ( i%2 == 1 && j%2 == 1 ){
         c.fillStyle = 'blue';
     }
