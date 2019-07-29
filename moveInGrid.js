@@ -41,7 +41,7 @@ function animate() {
   
   //CHECKERED BOARD
 for (i = 0 ; i < 10*squareSize ; i+=squareSize ){
-  for (j = 0 ; j < 10*squareSize ; j+=squareSize ) {  //j = (2*squareSize)
+  for (j = 0 ; j < 20*squareSize ; j+=squareSize ) {  //j = (2*squareSize)
    
     //UPDATE COLORS
     
