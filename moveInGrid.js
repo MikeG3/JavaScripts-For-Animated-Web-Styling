@@ -42,24 +42,33 @@ function animate() {
 
   
   //CHECKERED BOARD
-for (i = 0 ; i < 10*squareSize ; i+=squareSize ){
-  for (j = 0 ; j < 10*squareSize ; j+=squareSize ) {  //j = (2*squareSize)
-   
-    //UPDATE COLORS
-    
-    //CREATE CHECKER BOARD
-    if ( i%2 == 0 && j%2 == 0){
-//       c.fillStyle = 'rgba(50, 50, 50, 0.5)';
-      c.fillStyle = 'pink';
+ //CHECKERED BOARD
+for (i = 0 ; i < windowHeight ; i+=squareSize ){
+  for (j = 0 ; j < windowWidth ; j+=(squareSize) ) {  //j = (2*squareSize)
+    if ( (j==0) && (i/squareSize%2 != 0) ){     //if first in the row, and is an odd row number, offset by 1 square
+      j += squareSize;
     }//close if
-    else {
-//       c.fillStyle = 'rgba(250, 250, 250, 0.5)';
-      c.fillStyle = 'blue';
+    //update colors
+    aSquareR += 5;
+    aSquareR %= 255;
+    aSquareG += 25;
+    aSquareG %= 255;
+    aSquareB += 15;
+    aSquareB %= 255;
+    bSquareR += 3;
+    bSquareR %= 255;
+    bSquareG += 2;
+    bSquareG %= 255;
+    bSquareB += 6;
+    bSquareB %= 255;
+    if ( i%2 == 0 && j%2 ==0 ) {
+      c.fillStyle = 'rgba(0,100,' + aSquareB + ','+ aSquareA + ')';
+    }//close if
+    else  if ( i%2 == 1 && j%2 == 1 ){
+        c.fillStyle = 'rgba(0,100,' + bSquareB + ','+ bSquareA + ')';
     }
     c.fillRect(j, i, squareSize, squareSize);  
   }//close inner for loop
-  
-  //DRAW CURRENT POSITION SQUARE
   
 }//close outter for loop
  
