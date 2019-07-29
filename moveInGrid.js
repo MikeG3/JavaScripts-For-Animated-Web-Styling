@@ -56,6 +56,7 @@ for (i = 0 ; i < gridSizeY*squareSize ; i+=squareSize ){
     bSquareG %= 255;
     bSquareB += 6;
     bSquareB %= 255;
+     c.fillStyle = 'blue';
     if ( i%2 == 0 && j%2 ==0 ) {
       c.fillStyle = 'pink';
     }//close if
