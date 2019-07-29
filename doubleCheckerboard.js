@@ -24,6 +24,7 @@ var bSquareG = 0;
 var bSquareB = 0;
 var bSquareA = 0.5;
 var grayColor = 0;
+var grayColorInc = true;
 var incrementing = true;
 
 //ANIMATION LOOP
@@ -78,7 +79,19 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
   
 //TEXT
 c.font = "50px Comic Sans MS";
-grayColor = frameCounter % 255;
+if (frameCounter % 255 == 255 && grayColorInc) {
+  grayCOlorInc = false;
+}//close if
+c.font = "50px Comic Sans MS";
+else if (frameCounter % 255 == 1 && !grayColorInc) {
+  grayColorInc = true;
+}//close if  
+if (grayColorInc){
+  grayColor++;
+}//close if
+else { 
+  grayColor--;
+}
 c.fillStyle = "rgb(" + grayColor + "," + grayColor + "," + grayColor + ")";
 
 
