@@ -50,8 +50,6 @@ function animate() {
   //CHECKERED BOARD
 for (i = 0 ; i < windowHeight ; i+=squareSize ){
   for (j = 0 ; j < windowWidth ; j+=(squareSize) ) {  //j = (2*squareSize)
-    if ( (j==0) && (i/squareSize%2 != 0) ){     //if first in the row, and is an odd row number, offset by 1 square
-      j += squareSize;
     }//close if
     //update colors
     aSquareR += 5;
