@@ -80,7 +80,7 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
 //TEXT
 c.font = "50px Comic Sans MS";
 if (frameCounter % 255 == 254 && grayColorInc) {
-  grayCOlorInc = false;
+  grayColorInc = false;
 }//close if
 else if (frameCounter % 255 == 1 && !grayColorInc) {
   grayColorInc = true;
