@@ -49,7 +49,7 @@ for (i = 0 ; i < 10*squareSize ; i+=squareSize ){
     if ( i%2 == 0 && j%2 == 0){
       c.fillStyle = 'rgba(50, 50, 50, 0.5)';
     }//close if
-    else if ( i%2 == 1 && j%2 == 1 ){
+    else {
       c.fillStyle = 'rgba(250, 250, 250, 0.5)';
     }
     c.fillRect(j, i, squareSize, squareSize);  
