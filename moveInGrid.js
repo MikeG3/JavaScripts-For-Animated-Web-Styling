@@ -30,7 +30,6 @@ var bSquareA = 0.5;
 var grayColor = 0;
 var incrementing = true;
 
-//strat drawing
 
 
 c.fillStyle = "#FF00EE";
@@ -45,9 +44,7 @@ function animate() {
  //CHECKERED BOARD
 for (i = 0 ; i < 10*squareSize ; i+=squareSize ){
   for (j = 0 ; j < 10*squareSize  ; j+=(squareSize) ) {  //j = (2*squareSize)
-    if ( (j==0) && (i/squareSize%2 != 0) ){     //if first in the row, and is an odd row number, offset by 1 square
-      j += squareSize;
-    }//close if
+
     //update colors
     aSquareR += 5;
     aSquareR %= 255;
