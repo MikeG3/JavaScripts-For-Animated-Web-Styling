@@ -41,7 +41,7 @@ function animate() {
 
  //CHECKERED BOARD
 for (i = 0 ; i < gridSizeY*squareSize ; i+=squareSize ){
-  for (j = 0 ; j < gridSizeX*squareSize  ; j+=(squareSize) ) { 
+  for (j = 0 ; j < gridSizeX*squareSize  ; j+=squareSize ) { 
 
     //UPDATE COLORS
     aSquareR += 5;
@@ -57,7 +57,7 @@ for (i = 0 ; i < gridSizeY*squareSize ; i+=squareSize ){
     bSquareB += 6;
     bSquareB %= 255;
     if ( i%2 == 0 && j%2 ==0 ) {
-      c.fillStyle = 'pink';
+      c.fillStyle = 'rgba(0,100,' + aSquareB + ','+ aSquareA + ')';
     }//close if
     else {
         c.fillStyle = 'blue';
