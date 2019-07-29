@@ -74,21 +74,10 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
     c.fillRect(j, i, squareSize, squareSize);  
   }//close inner for loop
   
-  //UPDATE COLORS
-  aSquareR += 5;
-  aSquareR %= 255;
-  aSquareG += 25;
-  aSquareG %= 255;
-  aSquareB += 15;
-  aSquareB %= 255;
-  c.fillStyle = 'rgba(' + aSquareR + ',' + aSquareG + ',' + aSquareB + ','+ aSquareA + ')';
-  
 }//close outter for loop
-// document.write("Window width = " + windowWidth + "<br>");
-// document.write("Window height = " + windowHeight + "<br>");
   
 //TEXT
-c.font = "30px Comic Sans MS";
+c.font = "50px Comic Sans MS";
 grayColor = frameCounter % 255;
 c.fillStyle = "rgb(" + grayColor + "," + grayColor + "," + grayColor + ")";
 
