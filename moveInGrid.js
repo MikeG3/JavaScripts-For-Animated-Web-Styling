@@ -58,7 +58,7 @@ for (i = 0 ; i < gridSizeY ; i++ ){
     bSquareB %= 255;
     
     //UPDATE FILLSTYLE AFTER COLOR IS SELECTED
-    if ( i%2 == 0 && j%2 ==0 ) {
+    if ( (i%2 == 0 && j%2 ==0) || (i%2 == 1 && j%2 == 1)  ) {
       c.fillStyle = 'pink';
     }//close if
     else {
