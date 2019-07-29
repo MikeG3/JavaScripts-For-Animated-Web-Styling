@@ -40,8 +40,8 @@ function animate() {
   //LOCAL VARIABLES 
 
  //CHECKERED BOARD
-for (i = 0 ; i < 10*squareSize ; i+=squareSize ){
-  for (j = 0 ; j < 10*squareSize  ; j+=(squareSize) ) { 
+for (i = 0 ; i < gridSizeY*squareSize ; i+=squareSize ){
+  for (j = 0 ; j < gridSizeX*squareSize  ; j+=(squareSize) ) { 
 
     //UPDATE COLORS
     aSquareR += 5;
