@@ -58,7 +58,7 @@ for (i = 0 ; i < windowHeight ; i+=squareSize ){
     aSquareR %= 255;
     aSquareG += 25;
     aSquareG %= 255;
-    aSquareB += 3;
+    aSquareB += 18;
     aSquareB %= 255;
     bSquareR += 3;
     bSquareR %= 255;
