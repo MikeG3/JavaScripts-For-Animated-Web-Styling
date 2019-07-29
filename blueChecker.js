@@ -41,10 +41,10 @@ function animate() {
     incrementing = false;
   }
   if (incrementing){
-    squareSize++;
+   // squareSize++;
   }
     else {
-      squareSize--;
+   //   squareSize--;
    }
   
   //CHECKERED BOARD
