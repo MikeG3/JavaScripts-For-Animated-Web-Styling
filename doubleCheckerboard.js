@@ -82,7 +82,6 @@ c.font = "50px Comic Sans MS";
 if (frameCounter % 255 == 254 && grayColorInc) {
   grayCOlorInc = false;
 }//close if
-c.font = "50px Comic Sans MS";
 else if (frameCounter % 255 == 1 && !grayColorInc) {
   grayColorInc = true;
 }//close if  
@@ -91,7 +90,7 @@ if (grayColorInc){
 }//close if
 else { 
   grayColor--;
-}
+}//close else
 c.fillStyle = "rgb(" + grayColor + "," + grayColor + "," + grayColor + ")";
 
 
