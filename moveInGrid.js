@@ -59,7 +59,7 @@ for (i = 0 ; i < 10*squareSize ; i+=squareSize ){
     if ( i%2 == 0 && j%2 ==0 ) {
       c.fillStyle = 'pink';
     }//close if
-    else  if ( i%2 == 1 && j%2 == 1 ){
+    else {
         c.fillStyle = 'blue';
     }
     c.fillRect(j, i, squareSize, squareSize);  
