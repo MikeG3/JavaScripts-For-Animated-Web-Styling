@@ -35,9 +35,9 @@ window.addEventListener('keydown', move );
 //FUNCTIONS
 function move(key) {
     if (key.keyCode == 37) {xPos -= 1; }
-    if (key.keyCode == 39) {xPos += 1; }
-    if (key.keyCode == 38) {yPos -= 1; }
-    if (key.keyCode == 40) {yPos += 1; }
+    if (key.keyCode == 40) {xPos += 1; }
+    if (key.keyCode == 39) {yPos -= 1; }
+    if (key.keyCode == 38) {yPos += 1; }
 }//close move function
 
 
