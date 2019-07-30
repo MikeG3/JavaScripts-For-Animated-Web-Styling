@@ -16,9 +16,9 @@ var i = 0;
 var j = 0;
 var xPos = 4;
 var yPos = 8;
-var gridSizeX = 10;
-var gridSizeY = 10;
-var squareSize = 50;
+var gridSizeX = 30;
+var gridSizeY = 30;
+var squareSize = 15;
 var aSquareR = 0;
 var aSquareG = 0;
 var aSquareB = 0;
@@ -30,37 +30,23 @@ var bSquareA = 0.5;
 var grayColor = 0;
 var incrementing = true;
 
+
+//RESPOND TO ARROW KEY INPUT (ASCII 37-40)
 window.addEventListener('keydown', move );
 
 //FUNCTIONS
 function move(key) {
-    if (key.keyCode == 37) {xPos -= 1; }
-    if (key.keyCode == 39) {xPos += 1; }
-    if (key.keyCode == 40) {yPos -= 1; }
-    if (key.keyCode == 38) {yPos += 1; }
+    if (key.keyCode == 37) {xPos = (xPos-1)%gridSizeX; if (xPos < 0) { xPos += gridSizeX; } }
+    if (key.keyCode == 39) {xPos = (xPos+1)%gridSizeX; if (xPos > gridSizeX) { xPos -= gridSizeX; } }
+    if (key.keyCode == 38) {yPos = (yPos-1)%gridSizeY; if (yPos < 0) { yPos += gridSizeY; } }
+    if (key.keyCode == 40) {yPos = (yPos+1)%gridSizeY; if (yPos > gridSizeY) { yPos -= gridSizeY; } }
 }//close move function
 
-
-
-c.fillStyle = "#FF00EE";
-
-
+                            
 function animate() {
   
   //LOCAL VARIABLES 
   
-  //RESPOND TO ARROW KEY INPUT (ASCII 24 TO 27)
-  /* 	
-  Up 37
-↓	Downwards Arrow	38
-→	Rightwards Arrow	39
-←	Leftwards Arrow	40
-  */
-
-//Call
-
-
-
  //CHECKERED BOARD
 for (i = 0 ; i < gridSizeY ; i++ ){
   for (j = 0 ; j < gridSizeX  ; j++) { 
@@ -88,12 +74,13 @@ for (i = 0 ; i < gridSizeY ; i++ ){
     }
     
     //COLOR SELECTED SQUARE
-    if ( j == xPos && i == yPos )
-      c.fillStyle = '#003366';
-    
+    if ( j == xPos && i == yPos ){
+      c.fillStyle = '#001625';
+    }//close if selected position square
+      
+    //DRAW EACH RECTANGLE IN THE LOOPS
     c.fillRect(j*squareSize , i*squareSize , squareSize, squareSize);  
   }//close inner for loop
-  
 }//close outter for loop
  
 //TEXT
@@ -103,6 +90,6 @@ frameCounter++;
 requestAnimationFrame(animate);
 //output to console
 console.log(canvas);
-};
+};//CLOSE ANIMATION FUNCTION DEFINTION
 
 animate();
