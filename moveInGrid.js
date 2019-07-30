@@ -36,10 +36,10 @@ window.addEventListener('keydown', move );
 
 //FUNCTIONS
 function move(key) {
-    if (key.keyCode == 37) {xPos = xPos-1%gridSizeX; }
-    if (key.keyCode == 39) {xPos = xPos+1%gridSizeX; }
-    if (key.keyCode == 38) {yPos = yPos-1%gridSizeY; }
-    if (key.keyCode == 40) {yPos = yPos+1%gridSizeY; }
+    if (key.keyCode == 37) {xPos = (xPos-1)%gridSizeX; }
+    if (key.keyCode == 39) {xPos = (xPos+1)%gridSizeX; }
+    if (key.keyCode == 38) {yPos = (yPos-1)%gridSizeY; }
+    if (key.keyCode == 40) {yPos = (yPos+1)%gridSizeY; }
 }//close move function
 
 
