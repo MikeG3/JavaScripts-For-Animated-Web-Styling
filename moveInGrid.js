@@ -74,12 +74,13 @@ for (i = 0 ; i < gridSizeY ; i++ ){
     }
     
     //COLOR SELECTED SQUARE
-    if ( j == xPos && i == yPos )
+    if ( j == xPos && i == yPos ){
       c.fillStyle = '#001625';
-    
+    }//close if selected position square
+      
+    //DRAW EACH RECTANGLE IN THE LOOPS
     c.fillRect(j*squareSize , i*squareSize , squareSize, squareSize);  
   }//close inner for loop
-  
 }//close outter for loop
  
 //TEXT
@@ -89,6 +90,6 @@ frameCounter++;
 requestAnimationFrame(animate);
 //output to console
 console.log(canvas);
-};
+};//CLOSE ANIMATION FUNCTION DEFINTION
 
 animate();
