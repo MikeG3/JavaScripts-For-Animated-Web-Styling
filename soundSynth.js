@@ -33,6 +33,7 @@ var incrementing = true;
 
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40)
 window.addEventListener('keydown', move );
+c.addEventListener('keydown', move );
 
 //FUNCTIONS
 function move(key) {
