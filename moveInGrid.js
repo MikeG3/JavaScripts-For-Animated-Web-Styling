@@ -30,6 +30,8 @@ var bSquareA = 0.5;
 var grayColor = 0;
 var incrementing = true;
 
+
+//RESPOND TO ARROW KEY INPUT (ASCII 37-40)
 window.addEventListener('keydown', move );
 
 //FUNCTIONS
@@ -41,7 +43,6 @@ function move(key) {
 }//close move function
 
 
-
 c.fillStyle = "#FF00EE";
 
 
@@ -49,18 +50,6 @@ function animate() {
   
   //LOCAL VARIABLES 
   
-  //RESPOND TO ARROW KEY INPUT (ASCII 24 TO 27)
-  /* 	
-  Up 37
-↓	Downwards Arrow	38
-→	Rightwards Arrow	39
-←	Leftwards Arrow	40
-  */
-
-//Call
-
-
-
  //CHECKERED BOARD
 for (i = 0 ; i < gridSizeY ; i++ ){
   for (j = 0 ; j < gridSizeX  ; j++) { 
