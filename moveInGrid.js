@@ -88,7 +88,7 @@ for (i = 0 ; i < gridSizeY ; i++ ){
     }
     
     //COLOR SELECTED SQUARE
-    if ( i == xPos && j == yPos )
+    if ( j == xPos && i == yPos )
       c.fillStyle = '#003366';
     
     c.fillRect(j*squareSize , i*squareSize , squareSize, squareSize);  
