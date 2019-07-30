@@ -35,18 +35,18 @@ var incrementing = true;
 window.addEventListener('keydown', move );
 
 //FUNCTIONS
-wrapPositions(){
-  if (xPos < 0) { xPos += gridSizeX; }  
-  if (xPos > gridSizeX) { xPos -= gridSizeX; }  
-  if (yPos < 0) { yPos += gridSizeY; }  
-  if (yPos > gridSizeY) { yPos -= gridSizeY; }  
-}//close function wrap positions
+// wrapPositions(){
+//   if (xPos < 0) { xPos += gridSizeX; }  
+//   if (xPos > gridSizeX) { xPos -= gridSizeX; }  
+//   if (yPos < 0) { yPos += gridSizeY; }  
+//   if (yPos > gridSizeY) { yPos -= gridSizeY; }  
+// }//close function wrap positions
 
 function move(key) {
-    if (key.keyCode == 37) {xPos = (xPos-1)%gridSizeX;  wrapPositions(); }
-    if (key.keyCode == 39) {xPos = (xPos+1)%gridSizeX;  wrapPositions(); }
-    if (key.keyCode == 38) {yPos = (yPos-1)%gridSizeY;  wrapPositions(); }
-    if (key.keyCode == 40) {yPos = (yPos+1)%gridSizeY;  wrapPositions(); }
+    if (key.keyCode == 37) {xPos = (xPos-1)%gridSizeX; /* wrapPositions();*/ }
+    if (key.keyCode == 39) {xPos = (xPos+1)%gridSizeX; /* wrapPositions();*/ }
+    if (key.keyCode == 38) {yPos = (yPos-1)%gridSizeY; /* wrapPositions();*/ }
+    if (key.keyCode == 40) {yPos = (yPos+1)%gridSizeY; /* wrapPositions();*/ }
 }//close move function
 
 
