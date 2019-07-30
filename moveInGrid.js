@@ -30,6 +30,16 @@ var bSquareA = 0.5;
 var grayColor = 0;
 var incrementing = true;
 
+window.addEventListener('keydown', move );
+
+//FUNCTIONS
+function move(key) {
+    if (key.keyCode == 37) {xPos -= 1; }
+    if (key.keyCode == 39) {xPos += 1; }
+    if (key.keyCode == 38) {yPos -= 1; }
+    if (key.keyCode == 40) {yPos += 1; }
+}//close move function
+
 
 
 c.fillStyle = "#FF00EE";
@@ -38,6 +48,18 @@ c.fillStyle = "#FF00EE";
 function animate() {
   
   //LOCAL VARIABLES 
+  
+  //RESPOND TO ARROW KEY INPUT (ASCII 24 TO 27)
+  /* 	
+  Up 37
+↓	Downwards Arrow	38
+→	Rightwards Arrow	39
+←	Leftwards Arrow	40
+  */
+
+//Call
+
+
 
  //CHECKERED BOARD
 for (i = 0 ; i < gridSizeY ; i++ ){
