@@ -31,6 +31,11 @@ var grayColor = 0;
 var incrementing = true;
 
 //SOUND
+var soundWave;
+soundWave = new P5.Oscillator();
+soundWave.setType('sine');
+soundWave.amp(1);
+soundWave.frequency(220);
 
 
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40 for arrows)
