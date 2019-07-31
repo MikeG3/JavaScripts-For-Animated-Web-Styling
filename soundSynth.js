@@ -34,6 +34,7 @@ var incrementing = true;
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40)
 window.addEventListener('keydown', move );
 canvas.addEventListener('keydown', move );
+window.addEventListener('keydown', playSound );
 
 //FUNCTIONS
 function move(key) {
@@ -43,6 +44,11 @@ function move(key) {
     if (key.keyCode == 40) {yPos = (yPos+1)%gridSizeY; if (yPos > gridSizeY) { yPos -= gridSizeY; } }
 }//close move function
 
+function playSound(){
+     if (key.keyCode > 0) {
+        
+    }//close if
+}//close function play sound
                             
 function animate() {
   
