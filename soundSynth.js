@@ -32,12 +32,13 @@ var incrementing = true;
 
 //SOUND
 var soundWave;
+/*
 soundWave = new P5.Oscillator();
 soundWave.setType('sine');
 soundWave.start();
 soundWave.amp(0.5);
 soundWave.frequency(220);
-
+*/
 
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40 for arrows)
 window.addEventListener('keydown', move );
