@@ -34,7 +34,8 @@ var incrementing = true;
 var soundWave;
 soundWave = new P5.Oscillator();
 soundWave.setType('sine');
-soundWave.amp(1);
+soundWave.start();
+soundWave.amp(0.5);
 soundWave.frequency(220);
 
 
