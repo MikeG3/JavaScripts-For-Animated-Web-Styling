@@ -30,8 +30,10 @@ var bSquareA = 0.5;
 var grayColor = 0;
 var incrementing = true;
 
+//SOUND
 
-//RESPOND TO ARROW KEY INPUT (ASCII 37-40)
+
+//RESPOND TO ARROW KEY INPUT (ASCII 37-40 for arrows)
 window.addEventListener('keydown', move );
 canvas.addEventListener('keydown', move );
 window.addEventListener('keydown', playSound );
