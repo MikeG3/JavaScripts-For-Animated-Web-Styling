@@ -1,3 +1,7 @@
+/*
+ABANDONED, SEE P5 REPOSITORY
+*/
+
 //canvas can now be called by this variable
 var canvas = document.querySelector('canvas');
 
